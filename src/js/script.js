@@ -1,10 +1,10 @@
 let grid = 16;
 let number_blocks = 16 ** 2;
-    
+const containerEl = document.querySelector(".container");
 
 
 function createDiv() {
-    const containerEl = document.querySelector(".container");
+    
     containerEl.style.width = "300px"
     let containerWidth = containerEl.style.width;
     let new_width_var = containerWidth.replace("px", "");
@@ -13,12 +13,12 @@ function createDiv() {
         let div = document.createElement("div");
         div.style.width = div_size + "px";
         div.style.height = div_size + "px";
-        div.style.border = "1px solid gray"
-        div.className = "box"
+        div.style.border = "1px solid gray";
+        div.className = "box";
         if (div) {
-            console.log("exists")
+            console.log("exists");
         } else {
-            console.log('not loaded')
+            console.log('not loaded');
         }
         
         containerEl.appendChild(div);
@@ -26,3 +26,10 @@ function createDiv() {
 }
 
 createDiv();
+const containerItems = document.querySelectorAll(".box");
+
+containerItems.forEach((div) => {
+    div.addEventListener("mouseenter", (e) => {
+        e.target.style.backgroundColor = "gray";
+    })
+})
