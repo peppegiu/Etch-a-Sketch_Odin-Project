@@ -20,14 +20,17 @@ function updateGrid() {
     }
     
     else {
-        containerEl.innerHTML = " ";
-        createDiv()
+        DeleteChildNodes();
+        createDiv();
     }
         
     
 }
 
 
+function DeleteChildNodes() {
+    containerEl.innerHTML = " ";
+}
 
 
 function createDiv() {
