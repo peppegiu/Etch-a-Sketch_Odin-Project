@@ -30,6 +30,7 @@ function updateGrid() {
 
 function DeleteChildNodes() {
     containerEl.innerHTML = " ";
+    
 }
 
 
@@ -52,4 +53,8 @@ function createDiv() {
     }
 }
 
+function RandomizeRGBNumber() {
+    return Math.floor(Math.random() * 255);
+}
 
+console.log(RandomizeRGBNumber())
