@@ -6,7 +6,7 @@ let grid;
 let number_blocks;
 let div;
 
-label.textContent = range.value
+label.textContent = range.value;
 range.addEventListener("input", () => {
     label.textContent = range.value + "X" + range.value;
     grid = Number(range.value);
@@ -34,7 +34,7 @@ function DeleteChildNodes() {
 
 
 function createDiv() {
-    containerEl.style.width = "960px"
+    containerEl.style.width = "700px"
     let containerWidth = containerEl.style.width;
     let new_width_var = containerWidth.replace("px", "");
     const div_size = new_width_var / grid;
