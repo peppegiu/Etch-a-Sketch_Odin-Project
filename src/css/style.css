@@ -18,5 +18,20 @@ body {
     box-sizing: border-box;
 }
 
+.btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    border-width: 1px;
+    box-sizing: border-box;
+}
 
+#RGB_button {
+    background: rgb(161,26,198);
+    background: linear-gradient(0deg, rgba(161,26,198,1) 9%, rgba(46,51,186,1) 18%, rgba(63,167,175,1) 26%, rgba(126,211,221,1) 35%, rgba(84,161,60,1) 47%, rgba(195,225,61,1) 58%, rgba(253,233,45,1) 72%, rgba(240,145,55,0.9864320728291317) 84%, rgba(221,19,19,1) 96%);   
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
 

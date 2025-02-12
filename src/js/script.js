@@ -1,6 +1,20 @@
 const containerEl = document.querySelector(".container");
 const label = document.querySelector(".range");
 const range = document.querySelector("#area");
+const RGB_button = document.querySelector("#RGB_button")
+const normal_button = document.querySelector("#normal_button")
+let colorMode;
+let request;
+
+RGB_button.addEventListener("click", () => {
+    request = "rainbow";
+
+    
+})
+
+normal_button.addEventListener("click", () => {
+    request = "normal";   
+})
  
 let grid;
 let number_blocks;
@@ -46,7 +60,8 @@ function createDiv() {
         div.style.border = "1px solid gray";
         div.className = "box";
         div.addEventListener("mouseenter", (e) => {
-            e.target.style.backgroundColor = "gray";
+                e.target.style.backgroundColor = verifyColor();
+                console.log(div.value);
         })
         
         containerEl.appendChild(div);
@@ -58,3 +73,26 @@ function RandomizeRGBNumber() {
 }
 
 console.log(RandomizeRGBNumber())
+
+
+function changeColorMode(mode) {
+    if (mode === "rainbow") {
+        return `rgb(${RandomizeRGBNumber()} ${RandomizeRGBNumber()} ${RandomizeRGBNumber()})`;
+    }
+
+    else if (mode === "normal") {
+        return "gray";
+    }
+}
+
+function verifyColor() {
+    if (request === "normal") {
+        colorMode = changeColorMode(request);
+        return colorMode;
+    }
+
+    if (request === "rainbow") {
+        colorMode = changeColorMode(request);
+        return colorMode;
+    }
+}
