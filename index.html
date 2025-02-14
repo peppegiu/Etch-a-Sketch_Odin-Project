@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <div class="container">
+    <main>
 
-    </div>
+        <h1 class="title">Magic <span> Etch A sketch  </span>   Screen</h1>
+        <div class="container">
 
-    <input onclick="updateGrid()" type="range" id="area" min="2" max="100">
-    <label for="" class="range"></label>
+        </div>
     
-    <button id="normal_button" class="btn">Normal</button>
+        
+        
+        <div class="buttons">
+            <button id="normal_button" class="btn">Normal</button>
+            <section class="range-button">
+                <input onclick="updateGrid()" type="range" id="area" min="2" max="100">
+                <label for="" class="range"></label>
+            </section>
+            <button id="RGB_button" class="btn">Rainbow</button>
+        </div>
+        
     
-    <buttun id="RGB_button" class="btn">Rainbow</buttun>
+        <script src="src/js/script.js"></script>
+    </main>
 
-    <script src="src/js/script.js"></script>
 </body>
 </html>
