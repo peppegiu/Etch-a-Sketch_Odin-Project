@@ -33,7 +33,7 @@ main {
     justify-content: center;
     padding: 70px 10px;
     padding-top: 50px;
-    width: 40%;
+    width: 50%;
     height: 63%;
     background-color: #b60112;
     align-items: center;
@@ -41,8 +41,8 @@ main {
 }
 
 .container {
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid gray;
@@ -54,8 +54,8 @@ main {
 }
 
 .btn {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 70px;
     border-width: 1px;
     box-sizing: border-box;

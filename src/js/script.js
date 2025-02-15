@@ -49,7 +49,7 @@ function DeleteChildNodes() {
 
 
 function createDiv() {
-    containerEl.style.width = "700px"
+    containerEl.style.width = "500px"
     let containerWidth = containerEl.style.width;
     let new_width_var = containerWidth.replace("px", "");
     const div_size = new_width_var / grid;
