@@ -80,3 +80,8 @@ main {
 .buttons button {
     margin: 0 20px;
 }
+
+.range-button .range {
+    color: white;
+    font-size: 30px;
+}
